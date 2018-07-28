@@ -1,5 +1,5 @@
 # ApoloApp-MVVM
-This repository was created using MVVM pattern with Kotlin and RxJava, besides that for a better result it uses LiveData. The audio player
+This repository was created using MVVM pattern with Kotlin and RxJava, besides that for better results it uses LiveData. The audio player
 is just a plus but it's not working correctly.
 Clone the repository and make the changes you want. :)
 
