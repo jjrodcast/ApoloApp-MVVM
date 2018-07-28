@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_search_size">20sp</dimen>
+    <dimen name="layout_weight_zero">0dp</dimen>
+    <dimen name="cardview_margin">20dp</dimen>
+    <dimen name="cardview_elevation">8dp</dimen>
+    <dimen name="padding_top_bottom">8dp</dimen>
+    <dimen name="padding_left_right">16dp</dimen>
+    <dimen name="layout_margin_top">8dp</dimen>
+    <dimen name="cardview_layout_width">100dp</dimen>
+    <dimen name="cardview_corner_radius">8dp</dimen>
+    <dimen name="layout_text_view_marginStart">16dp</dimen>
+    <dimen name="layout_text_view_marginTop">8dp</dimen>
+    <dimen name="layout_view_marginTop">8dp</dimen>
+    <dimen name="layout_text_view_marginBottom">8dp</dimen>
+    <dimen name="cardview_layout_height">80dp</dimen>
+    <dimen name="info_artist_text_size">16sp</dimen>
+    <dimen name="info_artist_margin_start">8dp</dimen>
+    <dimen name="info_title_track">12sp</dimen>
+    <dimen name="track_album_text_size">12sp</dimen>
+    <dimen name="track_title_text_size">14sp</dimen>
+    <dimen name="layout_track_paddingBottom">4dp</dimen>
+    <dimen name="layout_track_paddinStart">4dp</dimen>
+    <dimen name="layout_track_paddingTop">6dp</dimen>
+    <dimen name="track_image_margin">4dp</dimen>
+    <dimen name="layout_track_paddinEnd">4dp</dimen>
+    <dimen name="image_play_track_padding">10dp</dimen>
+    <dimen name="image_play_track_width">40dp</dimen>
+    <dimen name="image_play_track_height">40dp</dimen>
+    <dimen name="image_detail_width">240dp</dimen>
+    <dimen name="image_detail_height">240dp</dimen>
+    <item name="layout_weight_image" format="float" type="dimen">0.7</item>
+    <item name="layout_weight_content" format="float" type="dimen">0.3</item>
+    <item name="image_track_weight_content" format="float" type="dimen">0.2</item>
+    <item name="info_track_weight_content" format="float" type="dimen">0.6</item>
+    <item name="image_play_track_weight_content" format="float" type="dimen">0.2</item>
+    <item name="weight_image_view" format="float" type="dimen">0.5</item>
+    <item name="weight_layout" format="float" type="dimen">0.5</item>
+</resources>

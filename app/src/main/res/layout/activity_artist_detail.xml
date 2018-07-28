@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="@integer/layout_weight_sum"
+    tools:context=".view.ArtistDetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_weight_zero"
+        android:layout_weight="@dimen/weight_image_view">
+
+        <ImageView
+            android:id="@+id/artistImageDetail"
+            android:layout_width="@dimen/image_detail_width"
+            android:layout_height="@dimen/image_detail_height"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/trackPlaying"
+            android:layout_width="@dimen/image_detail_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textColor="@color/colorTextSecondaryItem"
+            android:textSize="@dimen/info_title_track" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_weight_zero"
+        android:layout_weight="@dimen/weight_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_text_view_marginBottom"
+            android:layout_marginStart="@dimen/layout_text_view_marginStart"
+            android:layout_marginTop="@dimen/layout_text_view_marginTop"
+            android:text="@string/text_top_tracks"
+            android:textSize="@dimen/info_title_track"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerTrack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+</LinearLayout>

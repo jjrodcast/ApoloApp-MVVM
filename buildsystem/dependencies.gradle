@@ -1,0 +1,73 @@
+ext {
+
+    // Library versions
+    supportVersion = '27.1.1'
+    constraintLayoutVersion = '1.1.2'
+    glideVersion = '4.7.1'
+    rxJavaVersion = '2.1.17'
+    rxAndroidVersion = '2.0.2'
+    archLifecycleVersion = '1.1.1'
+    junitVersion = '4.12'
+    testRunnerVersion = '1.0.2'
+    espressoCoreVersion = '3.0.2'
+    lottieVersion = '2.5.5'
+    retrofitVersion = '2.4.0'
+    glideTransformationVersion = '3.3.0'
+
+    // Packages
+    supportPackage = 'com.android.support'
+    supportConstraintPackage = 'com.android.support.constraint'
+    glidePackage = 'com.github.bumptech.glide'
+    rxJavaPackage = 'io.reactivex.rxjava2'
+    archLifeCyclePackage = 'android.arch.lifecycle'
+    junitPackage = 'junit'
+    runnerPackage = 'com.android.support.test'
+    espressoCorePackage = 'com.android.support.test.espresso'
+    lottiePackage = 'com.airbnb.android'
+    retrofitPackage = 'com.squareup.retrofit2'
+    glideTransformationPackage = 'jp.wasabeef'
+
+    // Dependencies creation
+    // Support Libraries
+    supportDependencies = [
+            appcompat       : createDependency(supportPackage, 'appcompat-v7', supportVersion),
+            constraintLayout: createDependency(supportConstraintPackage, 'constraint-layout', constraintLayoutVersion),
+            support         : createDependency(supportPackage, 'support-v4', supportVersion),
+            design          : createDependency(supportPackage, 'design', supportVersion),
+            cardview        : createDependency(supportPackage, 'cardview-v7', supportVersion),
+            recyclerview    : createDependency(supportPackage, 'recyclerview-v7', supportVersion)
+    ]
+    // RxJava Libraries
+    rxDependencies = [
+            rxjava   : createDependency(rxJavaPackage, 'rxjava', rxJavaVersion),
+            rxandroid: createDependency(rxJavaPackage, 'rxandroid', rxAndroidVersion)
+    ]
+    // Test Libraries
+    testingDependencies = [
+            junit       : createDependency(junitPackage, 'junit', junitVersion),
+            runner      : createDependency(runnerPackage, 'runner', testRunnerVersion),
+            espressoCore: createDependency(espressoCorePackage, 'espresso-core', espressoCoreVersion)
+    ]
+    // Architecture Lifecycle Libraries
+    archDependencies = [
+            archLifeCycle: createDependency(archLifeCyclePackage, 'extensions', archLifecycleVersion)
+    ]
+    // Glide Libraries
+    glideDependencies = [
+            glide              : createDependency(glidePackage, 'glide', glideVersion),
+            glideCompiler      : createDependency(glidePackage, 'compiler', glideVersion),
+            glideTransformation: createDependency(glideTransformationPackage, 'glide-transformations', glideTransformationVersion)
+    ]
+    // Retrofit Libraries
+    retrofitDependencies = [
+            retrofit         : createDependency(retrofitPackage, 'retrofit', retrofitVersion),
+            retrofitGson     : createDependency(retrofitPackage, 'converter-gson', retrofitVersion),
+            retrofitRxAdapter: createDependency(retrofitPackage, 'adapter-rxjava2', retrofitVersion)
+    ]
+
+    lottie = createDependency(lottiePackage, 'lottie', lottieVersion)
+}
+
+static String createDependency(String androidPackage, String dependency, String version) {
+    return "${androidPackage}:${dependency}:${version}"
+}

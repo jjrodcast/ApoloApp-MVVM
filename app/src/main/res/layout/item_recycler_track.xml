@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cardview_layout_height"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="@dimen/cardview_corner_radius"
+    card_view:cardElevation="@dimen/cardview_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundItem"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:weightSum="@integer/layout_weight_sum">
+
+        <LinearLayout
+            android:layout_width="@dimen/layout_weight_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/image_track_weight_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/trackImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/track_image_margin" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/layout_weight_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/info_track_weight_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_track_paddingBottom"
+            android:paddingEnd="@dimen/layout_track_paddinEnd"
+            android:paddingStart="@dimen/layout_track_paddinStart"
+            android:paddingTop="@dimen/layout_track_paddingTop">
+
+            <TextView
+                android:id="@+id/trackName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="@integer/artist_max_line"
+                android:paddingEnd="@dimen/layout_track_paddinEnd"
+                android:textColor="@color/colorTextSecondaryItem"
+                android:textSize="@dimen/track_title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trackAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="@integer/artist_max_line"
+                android:textColor="@color/colorTextSecondaryItem"
+                android:textSize="@dimen/track_album_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/layout_weight_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/image_play_track_weight_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/trackImagePlayer"
+                android:layout_width="@dimen/image_play_track_width"
+                android:layout_height="@dimen/image_play_track_height"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_play_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

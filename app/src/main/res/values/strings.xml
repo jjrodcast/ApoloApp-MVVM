@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ApoloApp</string>
+    <string name="search_artist_hint">Search artists</string>
+    <string name="search_artist_label">Search artists</string>
+    <string name="search_title">Search</string>
+    <string name="no_artist">No artists found</string>
+    <string name="text_top_tracks">Top Tracks</string>
+    <string name="track_unavailable">is not available</string>
+</resources>

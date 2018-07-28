@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "pe.com.onecode.apoloapp"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation supportDependencies.constraintLayout
+    implementation supportDependencies.appcompat
+    implementation supportDependencies.cardview
+    implementation supportDependencies.recyclerview
+    implementation supportDependencies.design
+    implementation supportDependencies.support
+
+    implementation glideDependencies.glide
+    kapt glideDependencies.glideCompiler
+    implementation glideDependencies.glideTransformation
+
+    implementation lottie
+
+    implementation retrofitDependencies.retrofit
+    implementation retrofitDependencies.retrofitGson
+    implementation retrofitDependencies.retrofitRxAdapter
+
+    implementation rxDependencies.rxjava
+    implementation rxDependencies.rxandroid
+
+    implementation archDependencies.archLifeCycle
+
+    testImplementation testingDependencies.junit
+    androidTestImplementation testingDependencies.runner
+    androidTestImplementation testingDependencies.espressoCore
+
+}

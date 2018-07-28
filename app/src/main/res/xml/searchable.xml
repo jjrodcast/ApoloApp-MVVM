@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searhclable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:hint="@string/search_artist_hint"
+    android:label="@string/search_artist_label">
+
+</searhclable>
