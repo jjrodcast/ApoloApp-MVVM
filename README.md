@@ -1,6 +1,7 @@
 # ApoloApp-MVVM
 This repository was created using MVVM pattern with Kotlin and RxJava, besides that for better results it uses LiveData. The audio player
 is just a plus but it's not working correctly.
+To use it you have to create a developer account on Spotify then put your credencials in the ApiToken.kt file.
 Clone the repository and make the changes you want. :)
 
 ## Preview
