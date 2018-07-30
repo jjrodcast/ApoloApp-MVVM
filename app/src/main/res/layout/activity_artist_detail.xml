@@ -26,6 +26,7 @@
             android:ellipsize="marquee"
             android:focusable="true"
             android:gravity="center"
+            android:maxLines="@integer/artist_max_line"
             android:marqueeRepeatLimit="marquee_forever"
             android:scrollHorizontally="true"
             android:textColor="@color/colorTextSecondaryItem"
