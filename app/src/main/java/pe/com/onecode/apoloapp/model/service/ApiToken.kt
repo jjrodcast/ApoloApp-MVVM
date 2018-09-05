@@ -17,8 +17,8 @@ class ApiToken {
     companion object {
         const val BASE_URL_TOKEN = "https://accounts.spotify.com/api/"
         const val GRANT_TYPE = "client_credentials"
-        const val CLIENT_ID = "put_your_client_id" // Put your own
-        const val CLIENT_SECRET = "put_your_secret" // Put your own
+        const val CLIENT_ID = "7b02f3a3253e433ebaec4f9959279259" // Put your own
+        const val CLIENT_SECRET = "a3fd01a74e39429ba1d756527aaf7792" // Put your own
 
         val retrofit: ApiTokenService by lazy {
             Retrofit.Builder()

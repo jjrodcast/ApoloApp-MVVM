@@ -40,6 +40,9 @@ class TrackViewModel : ViewModel() {
     fun getTracksLiveData() = tracks
     fun getCurrentTrackLiveData() = currentTrack
 
-    private fun subscribeTracks(response: ResponseTracks) = tracks.postValue(response.tracks.take(7) as ArrayList<Track>)
+    private fun subscribeTracks(response: ResponseTracks) {
+        if (response.tracks.size < 7) tracks.postValue(response.tracks)
+        else tracks.postValue(response.tracks.take(7) as ArrayList<Track>)
+    }
 
 }
